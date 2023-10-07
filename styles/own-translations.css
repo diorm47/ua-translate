@@ -1,0 +1,45 @@
+.own_translations_page .cat_cards {
+  margin-top: 0;
+}
+
+.own_translations_page .catalogue_left {
+  width: 70%;
+}
+
+.own_translations_page .catalogue_right {
+  width: 20%;
+}
+
+.own_stats p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.own_stats span {
+  color: #96989d;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.comission {
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.comission span {
+  color: #fded01;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

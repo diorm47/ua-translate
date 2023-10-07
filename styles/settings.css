@@ -1,0 +1,100 @@
+.settings_content_block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.settings_content_left,
+.settings_content_right {
+  width: 50%;
+}
+
+.settings_content_left h3,
+.settings_content_right h3 {
+  color: #5e626c;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.password_input {
+  margin-bottom: 20px;
+}
+.password_input p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.password_input div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+.password_input div input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.password_input div svg {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+.save_btn {
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--dark, #5e626c);
+}
+
+.setting_fonsts {
+  margin-top: 60px;
+}
+.setting_fonsts p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font_size p {
+  margin-bottom: 20px;
+}
+.font_color {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.font_color div p:first-child {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.font_color button p {
+    margin: 0 !important;
+    margin-right: 30px !important; 
+}

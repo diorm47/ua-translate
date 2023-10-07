@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сповіщення | UA Translate</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/jolty/dist/jolty.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page_wrapper main_page notification_page">
+      <nav>
+        <div class="nav_wrapper">
+          <div class="search_wrapper">
+            <input type="text" placeholder="Пошук по сайту" />
+            <img src="./assets/icons/search.svg" alt="" />
+          </div>
+          <a href="/">
+            <div class="nav_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="nav_profile">
+            <div class="nav_profile_avatar">
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="nav_profile_name">
+              <p>Дмитро Поліщук</p>
+            </div>
+            <img src="./assets/icons/arrow-down.svg" alt="" />
+          </div>
+        </div>
+        <div class="navigation_bar">
+          <a href="./catalogue.html">
+            <div class="nav_menu_item">
+              <p>Каталог</p>
+            </div>
+          </a>
+          <a href="./translators.html">
+            <div class="nav_menu_item">
+              <p>Перекладачі</p>
+            </div>
+          </a>
+          <a href="./left-translations.html">
+            <div class="nav_menu_item">
+              <p>Покинуті переклади</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>ПоШУК</p>
+            </div>
+          </a>
+          <a href="./faq.html">
+            <div class="nav_menu_item">
+              <p>FAQ</p>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <div class="main_content_wrapper">
+        <div class="page_navigation">
+          <a href="/"><p>Головна</p></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <path d="M6.75 4.5L11.25 9L6.75 13.5" stroke="white" />
+          </svg>
+          <a href="./notifications.html"><p>Сповіщення</p></a>
+        </div>
+
+        <div class="catalogue_content">
+          <div class="catalogue_right">
+            <div class="main_page_title">
+              <h2>Сповіщення</h2>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Помилка у тексті</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Передача перекладу іншому</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Отримання перекладу від іншого</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Зміна статусу замовлення реклами у соцмережах</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Вихід нових розділів</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Новий розділ у перекладі</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Зміна статусу перекладу</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Зняття розділу з передплати</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Коментар до глави</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Коментар до книги</p>
+            </div>
+            <button class="about_book_action notification_save">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M16 21V19C16 17.1144 16 16.1716 15.4142 15.5858C14.8284 15 13.8856 15 12 15H11C9.11438 15 8.17157 15 7.58579 15.5858C7 16.1716 7 17.1144 7 19V21"
+                  stroke="white"
+                />
+                <path d="M7 8H12" stroke="white" stroke-linecap="round" />
+                <path
+                  d="M3 9C3 6.17157 3 4.75736 3.87868 3.87868C4.75736 3 6.17157 3 9 3H16.1716C16.5803 3 16.7847 3 16.9685 3.07612C17.1522 3.15224 17.2968 3.29676 17.5858 3.58579L20.4142 6.41421C20.7032 6.70324 20.8478 6.84776 20.9239 7.03153C21 7.2153 21 7.41968 21 7.82843V15C21 17.8284 21 19.2426 20.1213 20.1213C19.2426 21 17.8284 21 15 21H9C6.17157 21 4.75736 21 3.87868 20.1213C3 19.2426 3 17.8284 3 15V9Z"
+                  stroke="white"
+                />
+              </svg>
+              <p>Зберегти</p>
+            </button>
+          </div>
+          <div class="catalogue_left">
+            <div class="cat_sort translator_top_actions main_bb">
+              <p>Показано 4 сповіщення</p>
+              <div class="translator_filter">
+                <span>Показати сповіщення</span>
+                <select name="" id="">
+                  <option value="">за останні 7 днів</option>
+                  <option value="">назвою</option>
+                  <option value="">датою створення</option>
+                  <option value="">датою оновлення</option>
+                  <option value="">рейтингами</option>
+                  <option value="">переглядами</option>
+                  <option value="">кількістю лайків</option>
+                  <option value="">кількістю безкоштовних сторінок</option>
+                  <option value="">кількістю сторінок</option>
+                  <option value="">кількістю розділів</option>
+                  <option value="">кількістю в закладках</option>
+                </select>
+              </div>
+            </div>
+            <div class="notifications_content">
+              <div class="notification_item">
+                <p class="not_title">Розділ 1.</p>
+                <p class="not_text">
+                  Вітання. Добро пожалувати в систему перекладів «UA Translate».
+                  Цей сайт призначений для професійних мов любительських
+                  перекладів будь-яких новелів, фанфіків, ранобе з різних мов.
+                </p>
+                <p class="delete_not">Видалити</p>
+              </div>
+              <div class="notification_item">
+                <p class="not_title">Розділ 1.</p>
+                <p class="not_text">
+                  Вітання. Добро пожалувати в систему перекладів «UA Translate».
+                  Цей сайт призначений для професійних мов любительських
+                  перекладів будь-яких новелів, фанфіків, ранобе з різних мов.
+                </p>
+                <p class="delete_not">Видалити</p>
+              </div>
+              <div class="notification_item">
+                <p class="not_title">Розділ 1.</p>
+                <p class="not_text">
+                  Вітання. Добро пожалувати в систему перекладів «UA Translate».
+                  Цей сайт призначений для професійних мов любительських
+                  перекладів будь-яких новелів, фанфіків, ранобе з різних мов.
+                </p>
+                <p class="delete_not">Видалити</p>
+              </div>
+              <div class="notification_item">
+                <p class="not_title">Розділ 1.</p>
+                <p class="not_text">
+                  Вітання. Добро пожалувати в систему перекладів «UA Translate».
+                  Цей сайт призначений для професійних мов любительських
+                  перекладів будь-яких новелів, фанфіків, ранобе з різних мов.
+                </p>
+                <p class="delete_not">Видалити</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer_wrapper">
+          <a href="/">
+            <div class="footer_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Для правовласників</p>
+            </a>
+            <a href="#">
+              <p>Угода користувача</p>
+            </a>
+            <a href="#">
+              <p>Справка</p>
+            </a>
+            <a href="#">
+              <p>Не поповнився баланс?</p>
+            </a>
+          </div>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Сказати «дякую!»</p>
+            </a>
+            <a href="#">
+              <p>Запропонувати покращення</p>
+            </a>
+            <a href="#">
+              <p>Контакти</p>
+            </a>
+            <a href="#">
+              <p>Написати у підтримку</p>
+            </a>
+          </div>
+          <div class="footer_socials">
+            <a href="#">
+              <img src="./assets/icons/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/icons/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p>FanVerse © 2023</p>
+          <p>All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

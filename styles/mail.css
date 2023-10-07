@@ -1,0 +1,100 @@
+.new_message_btn {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--dark, #5e626c);
+  margin-bottom: 30px;
+}
+
+.mail_pagination_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mail_pagination_btns div {
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+  border: 1px solid var(--dark, #5e626c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mail_pagination_btns div:hover {
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+}
+.mail_pagination_btns div svg * {
+  transition: all 0.3s ease;
+}
+.mail_pagination_btns div:hover svg * {
+  transition: all 0.3s ease;
+  stroke: #fff;
+}
+
+.mail_item {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.mail_item_content {
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.mail_item_content:hover {
+  border-radius: 5px;
+  background: #282d3b;
+  transition: all 0.3s ease;
+}
+.mail_item_content:hover .delete_mail {
+  border-radius: 5px;
+  background: #1a1e29;
+  transition: all 0.3s ease;
+}
+.mail_texts {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.mail_texts span {
+  color: var(--dark, #5e626c);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mail_sender {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mail_text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.delete_mail {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #282d3b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete_selected {
+    margin-top: 40px;
+}

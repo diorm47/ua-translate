@@ -7,6 +7,11 @@
 @import url(./footer.css);
 @import url(./catalogue.css);
 @import url(./create-translation.css);
+@import url(./settings.css);
+@import url(./own-translations.css);
+@import url(./bookmarks.css);
+@import url(./notification.css);
+@import url(./mail.css);
 * {
   margin: 0;
   padding: 0;
@@ -80,3 +85,35 @@ button {
   border-radius: 5px;
   border: 1px solid var(--dark, #5e626c);
 }
+
+.about_book_action {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.about_book_action:hover {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  border-color: #00eafd;
+
+  background: var(--blue, #00eafd);
+  box-shadow: 0px 5px 15px 0px rgba(0, 234, 253, 0.3);
+}
+
+.about_book_action p {
+  transition: all 0.3s ease;
+}
+
+.about_book_action:hover p {
+  transition: all 0.3s ease;
+  color: #1a1e29;
+}
+.about_book_action svg * {
+  transition: all 0.3s ease;
+}
+
+.about_book_action:hover svg * {
+  transition: all 0.3s ease;
+  stroke: #1a1e29;
+}
+
+/* Toggle Switch */

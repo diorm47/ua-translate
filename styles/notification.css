@@ -1,0 +1,50 @@
+.notification_save {
+  margin-top: 60px;
+  border-radius: 5px;
+  border: 1px solid var(--dark, #5e626c);
+}
+
+.notification_page .cat_sort {
+  margin-top: 0;
+}
+.notification_item {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: #282d3b;
+  margin: 20px 0;
+}
+
+.not_title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  margin-bottom: 15px;
+}
+.not_text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  margin-bottom: 15px;
+}
+
+.delete_not {
+  color: var(--dark, #5e626c);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.delete_not:hover {
+  transition: all 0.3s ease;
+  color: #b44545;
+}

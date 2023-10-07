@@ -1,0 +1,34 @@
+.bookmarks_item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+.bookmarks_item p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bookmarks_item svg {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.bookmarks_item:hover {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  background: #282d3b;
+}
+.bookmarks_item:hover svg {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.bookmarks_card {
+  position: relative;
+}
