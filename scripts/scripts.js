@@ -57,3 +57,19 @@ $(document).ready(function () {
     nextArrow: $(".rec_right_arrow"),
   });
 });
+// other books carousel
+$(document).ready(function () {
+  $(".other_books_carousel").slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: true,
+    speed: 1000,
+    focusOnSelect: true,
+    prevArrow: $(".other_left_arrow"),
+    nextArrow: $(".other_right_arrow"),
+  });
+});
+
+
