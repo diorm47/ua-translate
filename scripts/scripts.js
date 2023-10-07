@@ -72,4 +72,20 @@ $(document).ready(function () {
   });
 });
 
+// Navigation active
+let navItems = document.querySelectorAll(".navigation_bar a");
+for (let i = 0; i < navItems.length; i++) {
+  if (navItems[i].href == window.location.href) {
+    navItems[i].className = "active_nav_menu";
+  }
+}
 
+// Tabs
+const { Tablist } = jolty;
+Tablist.initAll();
+
+// // Mobile menu wrpper
+// function toggleMenu() {
+//   let element = document.querySelector(".nav_mob_menu");
+//   element.classList.toggle("mob_menu_wrapper");
+// }

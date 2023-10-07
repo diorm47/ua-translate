@@ -1,0 +1,118 @@
+.main_content_wrapper {
+  width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.page_navigation {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.page_navigation p {
+  color: var(--dark, #5e626c);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_page_title h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.translator_top_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.translator_top_actions p {
+  color: #5e626c;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.translator_filter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.translator_filter span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.translator_filter select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+}
+
+.translator_table {
+  margin-top: 30px;
+  width: 100%;
+}
+.translator_table thead tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.translator_table thead tr td {
+  color: #00eafd;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 25%;
+}
+
+.translator_table tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.translator_table tbody tr td {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 25%;
+}
+
+.show_more {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  background: #282d3b;
+  border: none;
+}

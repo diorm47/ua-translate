@@ -2,6 +2,10 @@
 @import url(./nav-bar.css);
 @import url(./main-page.css);
 @import url(./about.css);
+@import url(./translator.css);
+@import url(./faq.css);
+@import url(./footer.css);
+@import url(./catalogue.css);
 * {
   margin: 0;
   padding: 0;
@@ -38,4 +42,17 @@ button {
 .nav_menu_item p:hover {
   transition: all 0.3s;
   color: yellow;
+}
+.active_nav_menu p {
+  color: yellow;
+  transition: all 0.3s;
+}
+
+.main_bb {
+  border-bottom: 1px solid #5e626c;
+  padding-bottom: 20px;
+}
+
+.fww {
+  flex-wrap: wrap;
 }

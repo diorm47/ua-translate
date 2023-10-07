@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог | UA Translate</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/jolty/dist/jolty.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page_wrapper main_page">
+      <nav>
+        <div class="nav_wrapper">
+          <div class="search_wrapper">
+            <input type="text" placeholder="Пошук по сайту" />
+            <img src="./assets/icons/search.svg" alt="" />
+          </div>
+          <a href="/">
+            <div class="nav_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="nav_profile">
+            <div class="nav_profile_avatar">
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="nav_profile_name">
+              <p>Дмитро Поліщук</p>
+            </div>
+            <img src="./assets/icons/arrow-down.svg" alt="" />
+          </div>
+        </div>
+        <div class="navigation_bar">
+          <a href="./catalogue.html">
+            <div class="nav_menu_item">
+              <p>Каталог</p>
+            </div>
+          </a>
+          <a href="./translators.html">
+            <div class="nav_menu_item">
+              <p>Перекладачі</p>
+            </div>
+          </a>
+          <a href="./left-translations.html">
+            <div class="nav_menu_item">
+              <p>Покинуті переклади</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>ПоШУК</p>
+            </div>
+          </a>
+          <a href="./faq.html">
+            <div class="nav_menu_item">
+              <p>FAQ</p>
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <div class="main_content_wrapper">
+        <div class="page_navigation">
+          <a href="/"><p>Головна</p></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <path d="M6.75 4.5L11.25 9L6.75 13.5" stroke="white" />
+          </svg>
+          <a href="./catalogue.html"><p>Каталог</p></a>
+        </div>
+        <div class="main_page_title">
+          <h2>Каталог</h2>
+        </div>
+
+        <div class="catalogue_content">
+          <div class="catalogue_left">
+            <div class="cat_search">
+              <input type="text" placeholder="Пошук по каталогу" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle cx="11" cy="11" r="6" stroke="white" />
+                <path d="M20 20L17 17" stroke="white" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="cat_sort translator_top_actions main_bb">
+              <p>Показано 36 робіт</p>
+              <div class="translator_filter">
+                <span>Сортувати за</span>
+                <select name="" id="">
+                  <option value="">кількістю безкоштовних сторінок</option>
+                  <option value="">кількістю безкоштовних сторінок</option>
+                  <option value="">кількістю безкоштовних сторінок</option>
+                </select>
+              </div>
+            </div>
+            <div class="cat_cards">
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cat_card">
+                <img src="./assets/images/harry.png" alt="" />
+                <div class="cat_card_desc">
+                  <div>
+                    <p>Статус:</p>
+                    <p>Перекладається</p>
+                  </div>
+                  <div>
+                    <p>Фендом:</p>
+                    <p>Наруто</p>
+                  </div>
+                  <div>
+                    <p>Теги:</p>
+                    <p>Пригоди</p>
+                  </div>
+                  <div>
+                    <p>Жанри:</p>
+                    <p>Пригоди</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="about_book_action show_more">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path d="M14 15L10 19L14 23" stroke="white" />
+                <path
+                  d="M5.93782 15.5C5.14475 14.1264 4.84171 12.5241 5.07833 10.9557C5.31495 9.38734 6.07722 7.94581 7.24024 6.86729C8.40327 5.78877 9.8981 5.13721 11.4798 5.01935C13.0616 4.90149 14.6365 5.32432 15.9465 6.21856C17.2565 7.1128 18.224 8.42544 18.6905 9.94144C19.1569 11.4574 19.0947 13.0869 18.5139 14.5629C17.9332 16.0389 16.8684 17.2739 15.494 18.0656C14.1196 18.8573 12.517 19.1588 10.9489 18.9206"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p>Показати ще</p>
+            </button>
+          </div>
+          <div class="catalogue_right">
+            <h3>Фільтри</h3>
+            <div class="filter_accordions">
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Мова оригіналу
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Англійська</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Англійська</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Англійська</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Англійська</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Обмеження за віком 18+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Так</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Ні</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Тип
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Жанри
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Теги
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item fww">
+                        <button class="tag_btn">#перкалад</button>
+                        <button class="tag_btn">#перкалад</button>
+                        <button class="tag_btn">#перкалад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Фендом
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Виключити жанри
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Виключити теги
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Виключити фендоми
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="checkbox" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Без фендомів
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item">
+                        <input type="radio" />
+                        <p>Переклад</p>
+                      </div>
+                      <div class="filter_item">
+                        <input type="radio" />
+                        <p>Авторське</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-ui-tablist class="accordion filter_accordion">
+                <div data-ui-tablist-item class="main_bb">
+                  <button data-ui-tablist-tab class="filter_accordion_tab">
+                    Кількість розділів
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M18 9L12 15L6 9" stroke="white" />
+                    </svg>
+                  </button>
+                  <div
+                    data-ui-tablist-tabpanel
+                    data-ui-transition-name="collapse"
+                    hidden
+                  >
+                    <div class="accordion-panel">
+                      <div class="filter_item filter_inputs">
+                        <div class="filter_input">
+                          <p>від</p>
+                          <input type="text" />
+                        </div>
+                        <div class="filter_input">
+                          <p>до</p>
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Готові на 100%</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Доступні для скачування</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Завершені проекти</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Розпродаж</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Тільки непереглянуті</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Не показувати закладки</p>
+            </div>
+            <div class="filter_item">
+              <input type="checkbox" />
+              <p>Тільки онгоінги</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer_wrapper">
+          <a href="/">
+            <div class="footer_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Для правовласників</p>
+            </a>
+            <a href="#">
+              <p>Угода користувача</p>
+            </a>
+            <a href="#">
+              <p>Справка</p>
+            </a>
+            <a href="#">
+              <p>Не поповнився баланс?</p>
+            </a>
+          </div>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Сказати «дякую!»</p>
+            </a>
+            <a href="#">
+              <p>Запропонувати покращення</p>
+            </a>
+            <a href="#">
+              <p>Контакти</p>
+            </a>
+            <a href="#">
+              <p>Написати у підтримку</p>
+            </a>
+          </div>
+          <div class="footer_socials">
+            <a href="#">
+              <img src="./assets/icons/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/icons/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p>FanVerse © 2023</p>
+          <p>All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
