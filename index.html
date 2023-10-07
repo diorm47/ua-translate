@@ -198,7 +198,7 @@
                 </div>
               </a>
               <div class="profile_line"></div>
-              <div class="nav_profile_menu_item">
+              <div class="nav_profile_menu_item" onclick="handleLogout()">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -218,6 +218,57 @@
                 <p>Вихід</p>
               </div>
             </div>
+          </div>
+          <div class="nav_login_actions">
+            <button class="about_book_action nav_login">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="3"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="12" r="9" stroke="white" />
+                <path
+                  d="M18 18.7059C17.6461 17.6427 16.8662 16.7033 15.7814 16.0332C14.6966 15.3632 13.3674 15 12 15C10.6326 15 9.30341 15.3632 8.21858 16.0332C7.13375 16.7033 6.35391 17.6427 6 18.7059"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p>Реєстрація</p>
+            </button>
+            <button class="about_book_action nav_login">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M7 7.13193V6.61204C7 4.46614 7 3.3932 7.6896 2.79511C8.37919 2.19703 9.44136 2.34877 11.5657 2.65224L15.8485 3.26408C18.3047 3.61495 19.5327 3.79039 20.2664 4.63628C21 5.48217 21 6.72271 21 9.20377V14.7962C21 17.2773 21 18.5178 20.2664 19.3637C19.5327 20.2096 18.3047 20.385 15.8485 20.7359L11.5657 21.3478C9.44136 21.6512 8.37919 21.803 7.6896 21.2049C7 20.6068 7 19.5339 7 17.388V17.066"
+                  stroke="white"
+                />
+                <path
+                  d="M16 12L16.3904 11.6877L16.6403 12L16.3904 12.3123L16 12ZM4 12.5C3.72386 12.5 3.5 12.2761 3.5 12C3.5 11.7239 3.72386 11.5 4 11.5V12.5ZM12.3904 6.68765L16.3904 11.6877L15.6096 12.3123L11.6096 7.31235L12.3904 6.68765ZM16.3904 12.3123L12.3904 17.3123L11.6096 16.6877L15.6096 11.6877L16.3904 12.3123ZM16 12.5H4V11.5H16V12.5Z"
+                  fill="white"
+                />
+              </svg>
+              <p>Увійти</p>
+            </button>
+          </div>
+          <div class="switch_toggler">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
           </div>
         </div>
         <div class="navigation_bar">
@@ -719,6 +770,124 @@
           <p>All rights reserved</p>
         </div>
       </footer>
+
+      <!-- Login auth -->
+      <div class="login_auth_wrapper">
+        <div class="login_auth_modal auth_modal">
+          <div class="login_auth_modal_exit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 6L6 18"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6L18 18"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2>РЕЄСТРАЦІЯ</h2>
+          <div class="login_auth_modal_input">
+            <p>Email *</p>
+            <input type="text" />
+          </div>
+          <div class="login_auth_modal_input">
+            <p>Ім’я *</p>
+            <input type="text" />
+          </div>
+          <div class="login_auth_modal_input">
+            <p>Прізвище *</p>
+            <input type="text" />
+          </div>
+          <div class="login_auth_modal_input">
+            <p>Пароль</p>
+            <input type="password" />
+          </div>
+          <div class="login_auth_modal_input">
+            <p>Підтвердити пароль</p>
+            <input type="password" />
+          </div>
+          <label for="myCheckbox90" class="checkbox policy">
+            <input class="checkbox__input" type="checkbox" id="myCheckbox90" />
+            <svg
+              class="checkbox__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 22 22"
+            >
+              <rect
+                width="21"
+                height="21"
+                x=".5"
+                y=".5"
+                fill="#FFF"
+                stroke="#006F94"
+                rx="3"
+              ></rect>
+              <path
+                class="tick"
+                stroke="#6EA340"
+                fill="none"
+                stroke-linecap="round"
+                stroke-width="4"
+                d="M4 10l5 5 9-9"
+              ></path>
+            </svg>
+            <p class="checkbox__label">
+              Приймаю <a class="link" href="/">Умови</a>
+            </p>
+          </label>
+          <button class="about_book_action login_btn">
+            <p>Зареєструватися</p>
+          </button>
+          <div class="or_block">
+            <div class="or_line"></div>
+            <p>або</p>
+            <div class="or_line"></div>
+          </div>
+          <div class="auth_socials">
+            <button class="about_book_action">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_168_2906)">
+                <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z" fill="#1877F2"/>
+                <path d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_168_2906">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+              <p>Facebook</p>
+            </button>
+            <button class="about_book_action">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_168_2909)">
+                <path d="M23.7643 12.2765C23.7643 11.4608 23.6982 10.6406 23.5571 9.83813H12.2383V14.4591H18.72C18.451 15.9495 17.5868 17.2679 16.3213 18.1056V21.104H20.1883C22.4591 19.014 23.7643 15.9274 23.7643 12.2765Z" fill="#4285F4"/>
+                <path d="M12.2391 24.0008C15.4756 24.0008 18.205 22.9382 20.1936 21.1039L16.3266 18.1055C15.2507 18.8375 13.8618 19.252 12.2435 19.252C9.11291 19.252 6.45849 17.1399 5.50607 14.3003H1.51562V17.3912C3.55274 21.4434 7.70192 24.0008 12.2391 24.0008Z" fill="#34A853"/>
+                <path d="M5.50082 14.3002C4.99816 12.8099 4.99816 11.196 5.50082 9.70569V6.61475H1.51478C-0.187219 10.0055 -0.187219 14.0004 1.51478 17.3912L5.50082 14.3002Z" fill="#FBBC04"/>
+                <path d="M12.2391 4.74966C13.9499 4.7232 15.6034 5.36697 16.8425 6.54867L20.2685 3.12262C18.0991 1.0855 15.2198 -0.034466 12.2391 0.000808666C7.70192 0.000808666 3.55274 2.55822 1.51562 6.61481L5.50166 9.70575C6.44967 6.86173 9.1085 4.74966 12.2391 4.74966Z" fill="#EA4335"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_168_2909">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+              <p>Google</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./scripts/scripts.js"></script>
   </body>

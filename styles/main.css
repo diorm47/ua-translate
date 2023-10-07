@@ -12,6 +12,7 @@
 @import url(./bookmarks.css);
 @import url(./notification.css);
 @import url(./mail.css);
+@import url(./login-auth.css);
 * {
   margin: 0;
   padding: 0;
@@ -116,4 +117,87 @@ button {
   stroke: #1a1e29;
 }
 
-/* Toggle Switch */
+/* Checkbox */
+.checkbox {
+  counter-increment: total;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"]:checked {
+  counter-increment: checked;
+}
+
+.checkbox__input:checked + .checkbox__icon + .checkbox__label {
+  color: #00eafd;
+}
+
+.checkbox__icon {
+  width: 16px;
+  height: 16px;
+}
+.checkbox__icon * {
+  fill: transparent;
+}
+.checkbox__icon rect:first-child {
+  stroke: #5e626c;
+}
+.checkbox__icon path:last-child {
+  stroke: #00eafd;
+}
+.check-group__result {
+  font-weight: bold;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.check-group__result:after {
+  content: counter(checked) " / " counter(total);
+  padding-left: 1ch;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1.375em;
+  height: 1.375em;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__icon .tick {
+  stroke-dashoffset: 0;
+}
+
+.checkbox__icon {
+  width: 1.375em;
+  height: 1.375em;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.checkbox__icon .tick {
+  stroke-dasharray: 20px;
+  stroke-dashoffset: 20px;
+  transition: stroke-dashoffset 0.2s ease-out;
+}
+
+.checkbox__label {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 15px;
+}
+
+/* Select */
+
+select {
+  background: #1a1e29 !important;
+}

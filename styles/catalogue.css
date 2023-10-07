@@ -106,6 +106,9 @@
 .filter_accordion_tab svg {
   transform: rotate(-90deg);
 }
+.accordion-panel {
+  padding-top: 15px;
+}
 
 .filter_item {
   display: flex;

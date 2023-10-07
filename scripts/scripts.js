@@ -82,13 +82,11 @@ for (let i = 0; i < navItems.length; i++) {
 
 // Nav profile toggler
 const nav_profile_menu = document.querySelector(".nav_profile_menu");
-
 function toggleNavMenu() {
   nav_profile_menu.classList.toggle("nav_profile_menu_hidden");
 }
 
 // tabs
-
 function openTab(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -102,13 +100,23 @@ function openTab(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active_tab";
 }
-
 window.onload = function () {
   var mockEvent = {
     currentTarget: document.querySelector(".tablinks"),
   };
   openTab(mockEvent, "firstTab");
 };
+
+// Logout
+const nav_wrapper = document.querySelector(".nav_wrapper");
+function handleLogout() {
+  nav_wrapper.classList.add("not_logined");
+  localStorage.setItem("logined", false);
+}
+
+if (localStorage.getItem("logined") == "false") {
+  nav_wrapper.classList.add("not_logined");
+}
 
 // // Mobile menu wrpper
 // function toggleMenu() {
