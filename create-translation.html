@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Створити переклад | UA Translate</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page_wrapper main_page">
+      <nav>
+        <div class="nav_wrapper">
+          <div class="search_wrapper">
+            <input type="text" placeholder="Пошук по сайту" />
+            <img src="./assets/icons/search.svg" alt="" />
+          </div>
+          <a href="/">
+            <div class="nav_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="nav_profile">
+            <div class="nav_profile_avatar">
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="nav_profile_name">
+              <p>Дмитро Поліщук</p>
+            </div>
+            <img src="./assets/icons/arrow-down.svg" alt="" />
+          </div>
+        </div>
+        <div class="navigation_bar">
+          <a href="./catalogue.html">
+            <div class="nav_menu_item">
+              <p>Каталог</p>
+            </div>
+          </a>
+          <a href="./translators.html">
+            <div class="nav_menu_item">
+              <p>Перекладачі</p>
+            </div>
+          </a>
+          <a href="./left-translations.html">
+            <div class="nav_menu_item">
+              <p>Покинуті переклади</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="nav_menu_item">
+              <p>ПоШУК</p>
+            </div>
+          </a>
+          <a href="./faq.html">
+            <div class="nav_menu_item">
+              <p>FAQ</p>
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <div class="main_content_wrapper">
+        <div class="page_navigation">
+          <a href="/"><p>Головна</p></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <path d="M6.75 4.5L11.25 9L6.75 13.5" stroke="white" />
+          </svg>
+          <a href="./create-translation.html"><p>Створити переклад</p></a>
+        </div>
+        <div class="main_page_title">
+          <h2>Створити переклад</h2>
+        </div>
+        <div class="create_tr_content">
+          <div class="create_tr_top_nav">
+            <p class="tablinks active_tab" onclick="openTab(event, 'firstTab')">
+              Загальні налаштування
+            </p>
+            <p class="tablinks" onclick="openTab(event, 'secondTab')">
+              Абонемент
+            </p>
+            <p class="tablinks" onclick="openTab(event, 'thirdTab')">
+              Реклама на сайті
+            </p>
+            <p class="tablinks" onclick="openTab(event, 'fourthTab')">
+              Права доступу
+            </p>
+          </div>
+          <div id="firstTab" class="tabcontent">
+            <div class="tabcontent_wrapper">
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Мова оригіналу</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Назва мовою перекладу</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Автор твору</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                      <option value="">Англійська</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Статус випуску</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Онгоінг</option>
+                      <option value="">Онгоінг</option>
+                      <option value="">Онгоінг</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Статус перекладу</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Онгоінг</option>
+                      <option value="">Онгоінг</option>
+                      <option value="">Онгоінг</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item opis_re main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Опис/ рецензія</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <textarea placeholder="Англійська"></textarea>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb ais">
+                <div class="tabcontent_item_left">
+                  <p>Жанр</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="hashs_wrapper">
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn active_hash">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75ZM9.01822 11.8902L12.7682 7.39018L11.2318 6.10982L8.1828 9.76859L6.70711 8.29289L5.29289 9.70711L7.54289 11.9571L8.3172 12.7314L9.01822 11.8902Z"
+                          fill="#00EAFD"
+                        />
+                      </svg>
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn active_hash">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75ZM9.01822 11.8902L12.7682 7.39018L11.2318 6.10982L8.1828 9.76859L6.70711 8.29289L5.29289 9.70711L7.54289 11.9571L8.3172 12.7314L9.01822 11.8902Z"
+                          fill="#00EAFD"
+                        />
+                      </svg>
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb ais">
+                <div class="tabcontent_item_left">
+                  <p>Теги</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="hashs_wrapper">
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn active_hash">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75ZM9.01822 11.8902L12.7682 7.39018L11.2318 6.10982L8.1828 9.76859L6.70711 8.29289L5.29289 9.70711L7.54289 11.9571L8.3172 12.7314L9.01822 11.8902Z"
+                          fill="#00EAFD"
+                        />
+                      </svg>
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn active_hash">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75ZM9.01822 11.8902L12.7682 7.39018L11.2318 6.10982L8.1828 9.76859L6.70711 8.29289L5.29289 9.70711L7.54289 11.9571L8.3172 12.7314L9.01822 11.8902Z"
+                          fill="#00EAFD"
+                        />
+                      </svg>
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                    <div class="hashs_btn">
+                      <p>гарри поттер</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Фендом</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <div class="translator_filter">
+                    <select name="" id="">
+                      <option value="">Marvel Comics</option>
+                      <option value="">Marvel Comics</option>
+                      <option value="">Marvel Comics</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb ais">
+                <div class="tabcontent_item_left">
+                  <p>Обмеження за віком 18+</p>
+                </div>
+                <div class="tabcontent_item_right is_your_age">
+                  <div class="filter_item">
+                    <input type="checkbox" />
+                    <p>Так</p>
+                  </div>
+                  <div class="filter_item">
+                    <input type="checkbox" />
+                    <p>Ні</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Основне зображення</p>
+                </div>
+                <div class="tabcontent_item_right">
+                  <button class="about_book_action show_more m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2.5C9.76317 2.5 7.83928 3.83526 6.97989 5.75007C6.89728 5.93416 6.83874 6.06452 6.79362 6.15941C6.77129 6.20638 6.75451 6.23984 6.74168 6.26371C6.73213 6.28147 6.72703 6.28965 6.72588 6.29149C6.72575 6.29171 6.72567 6.29184 6.72564 6.29188C6.65664 6.38826 6.62018 6.41763 6.59892 6.4314C6.57756 6.44522 6.53559 6.46657 6.41833 6.49017C6.38281 6.49732 6.30904 6.5 6 6.5C4.067 6.5 2.5 8.067 2.5 10C2.5 11.933 4.067 13.5 6 13.5H6.67157L7.67157 12.5H6C4.61929 12.5 3.5 11.3807 3.5 10C3.5 8.61929 4.61929 7.5 6 7.5L6.05357 7.50003C6.27958 7.50021 6.46738 7.50035 6.61565 7.47051C6.79642 7.43413 6.97421 7.37969 7.1423 7.27088C7.3104 7.16208 7.43286 7.02216 7.54007 6.87214C7.59798 6.79112 7.64966 6.68782 7.69674 6.58881C7.74715 6.48277 7.81019 6.34231 7.88955 6.1655L7.88958 6.16542L7.89222 6.15954C8.59624 4.59089 10.1713 3.5 12 3.5C13.8287 3.5 15.4038 4.59089 16.1078 6.15954L16.1105 6.16566C16.1898 6.3424 16.2529 6.4828 16.3033 6.58881C16.3503 6.68782 16.402 6.79112 16.4599 6.87214C16.5671 7.02216 16.6896 7.16208 16.8577 7.27088C17.0258 7.37969 17.2036 7.43413 17.3844 7.47051C17.5326 7.50035 17.7204 7.50021 17.9464 7.50003L18 7.5C19.3807 7.5 20.5 8.61929 20.5 10C20.5 11.3807 19.3807 12.5 18 12.5H16.3284L17.3284 13.5H18C19.933 13.5 21.5 11.933 21.5 10C21.5 8.067 19.933 6.5 18 6.5C17.691 6.5 17.6172 6.49732 17.5817 6.49017C17.4644 6.46657 17.4224 6.44522 17.4011 6.4314C17.3798 6.41763 17.3434 6.38826 17.2744 6.29188L17.2741 6.2915C17.273 6.28968 17.2679 6.2815 17.2583 6.26371C17.2455 6.23984 17.2287 6.20638 17.2064 6.15941C17.1613 6.06452 17.1027 5.93416 17.0201 5.75007C16.1607 3.83526 14.2368 2.5 12 2.5Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M12 12L11.6464 11.6464L12 11.2929L12.3536 11.6464L12 12ZM12.5 21C12.5 21.2761 12.2761 21.5 12 21.5C11.7239 21.5 11.5 21.2761 11.5 21L12.5 21ZM7.64645 15.6464L11.6464 11.6464L12.3536 12.3536L8.35355 16.3536L7.64645 15.6464ZM12.3536 11.6464L16.3536 15.6464L15.6464 16.3536L11.6464 12.3536L12.3536 11.6464ZM12.5 12L12.5 21L11.5 21L11.5 12L12.5 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <p>Вибрати зображення</p>
+                  </button>
+                </div>
+              </div>
+              <div class="tabcontent_item ais">
+                <div class="tabcontent_item_left">
+                  <p>Додаткові зображення</p>
+                </div>
+                <div class="tabcontent_item_right add_images">
+                  <div class="add_image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                        stroke="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9976 14.2904L18.6544 13.9471L18.6385 13.9313C18.238 13.5307 17.9149 13.2077 17.6314 12.9687C17.3394 12.7226 17.055 12.5353 16.7221 12.4349C16.2512 12.2928 15.7488 12.2928 15.2779 12.4349C14.945 12.5353 14.6606 12.7226 14.3686 12.9687C14.0851 13.2077 13.762 13.5307 13.3615 13.9313L13.3456 13.9471C13.0459 14.2469 12.8458 14.4462 12.6832 14.5807C12.5218 14.7142 12.452 14.7359 12.4237 14.7408C12.3029 14.762 12.1785 14.7381 12.0742 14.6735C12.0498 14.6584 11.993 14.6123 11.8928 14.4285C11.7917 14.2432 11.68 13.9838 11.513 13.5942L11.4596 13.4696L11.4475 13.4414L11.4475 13.4414C11.0829 12.5907 10.7931 11.9144 10.5107 11.4126C10.2237 10.9026 9.90522 10.4984 9.44575 10.268C9.03426 10.0618 8.57382 9.97308 8.11515 10.0118C7.603 10.055 7.15716 10.3121 6.70134 10.6789C6.25273 11.04 5.73245 11.5603 5.07799 12.2148L5.07798 12.2148L5.05634 12.2364L5 12.2928V12.9999C5 13.2462 5.00007 13.4816 5.00044 13.7065L5.76344 12.9435C6.44443 12.2626 6.92686 11.7811 7.32835 11.458C7.72756 11.1366 7.98255 11.0265 8.19924 11.0082C8.47444 10.985 8.75071 11.0382 8.9976 11.162C9.192 11.2594 9.38786 11.4564 9.63918 11.903C9.89194 12.3521 10.1611 12.9783 10.5404 13.8635L10.5938 13.9881L10.6034 14.0105L10.6034 14.0105C10.7583 14.3719 10.8884 14.6754 11.0149 14.9073C11.1448 15.1455 11.3038 15.3727 11.5479 15.5238C11.8608 15.7175 12.2341 15.7894 12.5966 15.7258C12.8794 15.6761 13.1114 15.5242 13.3204 15.3513C13.524 15.183 13.7575 14.9495 14.0355 14.6714L14.0527 14.6542C14.4728 14.2341 14.766 13.9416 15.013 13.7334C15.2553 13.5292 15.4185 13.437 15.5667 13.3922C15.8493 13.307 16.1507 13.307 16.4333 13.3922C16.5815 13.437 16.7447 13.5292 16.987 13.7334C17.234 13.9416 17.5272 14.2341 17.9473 14.6542L18.9755 15.6825C18.9887 15.2721 18.9948 14.812 18.9976 14.2904Z"
+                        fill="white"
+                      />
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                    </svg>
+                  </div>
+                  <div class="add_image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                        stroke="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9976 14.2904L18.6544 13.9471L18.6385 13.9313C18.238 13.5307 17.9149 13.2077 17.6314 12.9687C17.3394 12.7226 17.055 12.5353 16.7221 12.4349C16.2512 12.2928 15.7488 12.2928 15.2779 12.4349C14.945 12.5353 14.6606 12.7226 14.3686 12.9687C14.0851 13.2077 13.762 13.5307 13.3615 13.9313L13.3456 13.9471C13.0459 14.2469 12.8458 14.4462 12.6832 14.5807C12.5218 14.7142 12.452 14.7359 12.4237 14.7408C12.3029 14.762 12.1785 14.7381 12.0742 14.6735C12.0498 14.6584 11.993 14.6123 11.8928 14.4285C11.7917 14.2432 11.68 13.9838 11.513 13.5942L11.4596 13.4696L11.4475 13.4414L11.4475 13.4414C11.0829 12.5907 10.7931 11.9144 10.5107 11.4126C10.2237 10.9026 9.90522 10.4984 9.44575 10.268C9.03426 10.0618 8.57382 9.97308 8.11515 10.0118C7.603 10.055 7.15716 10.3121 6.70134 10.6789C6.25273 11.04 5.73245 11.5603 5.07799 12.2148L5.07798 12.2148L5.05634 12.2364L5 12.2928V12.9999C5 13.2462 5.00007 13.4816 5.00044 13.7065L5.76344 12.9435C6.44443 12.2626 6.92686 11.7811 7.32835 11.458C7.72756 11.1366 7.98255 11.0265 8.19924 11.0082C8.47444 10.985 8.75071 11.0382 8.9976 11.162C9.192 11.2594 9.38786 11.4564 9.63918 11.903C9.89194 12.3521 10.1611 12.9783 10.5404 13.8635L10.5938 13.9881L10.6034 14.0105L10.6034 14.0105C10.7583 14.3719 10.8884 14.6754 11.0149 14.9073C11.1448 15.1455 11.3038 15.3727 11.5479 15.5238C11.8608 15.7175 12.2341 15.7894 12.5966 15.7258C12.8794 15.6761 13.1114 15.5242 13.3204 15.3513C13.524 15.183 13.7575 14.9495 14.0355 14.6714L14.0527 14.6542C14.4728 14.2341 14.766 13.9416 15.013 13.7334C15.2553 13.5292 15.4185 13.437 15.5667 13.3922C15.8493 13.307 16.1507 13.307 16.4333 13.3922C16.5815 13.437 16.7447 13.5292 16.987 13.7334C17.234 13.9416 17.5272 14.2341 17.9473 14.6542L18.9755 15.6825C18.9887 15.2721 18.9948 14.812 18.9976 14.2904Z"
+                        fill="white"
+                      />
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                    </svg>
+                  </div>
+                  <div class="add_image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                        stroke="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9976 14.2904L18.6544 13.9471L18.6385 13.9313C18.238 13.5307 17.9149 13.2077 17.6314 12.9687C17.3394 12.7226 17.055 12.5353 16.7221 12.4349C16.2512 12.2928 15.7488 12.2928 15.2779 12.4349C14.945 12.5353 14.6606 12.7226 14.3686 12.9687C14.0851 13.2077 13.762 13.5307 13.3615 13.9313L13.3456 13.9471C13.0459 14.2469 12.8458 14.4462 12.6832 14.5807C12.5218 14.7142 12.452 14.7359 12.4237 14.7408C12.3029 14.762 12.1785 14.7381 12.0742 14.6735C12.0498 14.6584 11.993 14.6123 11.8928 14.4285C11.7917 14.2432 11.68 13.9838 11.513 13.5942L11.4596 13.4696L11.4475 13.4414L11.4475 13.4414C11.0829 12.5907 10.7931 11.9144 10.5107 11.4126C10.2237 10.9026 9.90522 10.4984 9.44575 10.268C9.03426 10.0618 8.57382 9.97308 8.11515 10.0118C7.603 10.055 7.15716 10.3121 6.70134 10.6789C6.25273 11.04 5.73245 11.5603 5.07799 12.2148L5.07798 12.2148L5.05634 12.2364L5 12.2928V12.9999C5 13.2462 5.00007 13.4816 5.00044 13.7065L5.76344 12.9435C6.44443 12.2626 6.92686 11.7811 7.32835 11.458C7.72756 11.1366 7.98255 11.0265 8.19924 11.0082C8.47444 10.985 8.75071 11.0382 8.9976 11.162C9.192 11.2594 9.38786 11.4564 9.63918 11.903C9.89194 12.3521 10.1611 12.9783 10.5404 13.8635L10.5938 13.9881L10.6034 14.0105L10.6034 14.0105C10.7583 14.3719 10.8884 14.6754 11.0149 14.9073C11.1448 15.1455 11.3038 15.3727 11.5479 15.5238C11.8608 15.7175 12.2341 15.7894 12.5966 15.7258C12.8794 15.6761 13.1114 15.5242 13.3204 15.3513C13.524 15.183 13.7575 14.9495 14.0355 14.6714L14.0527 14.6542C14.4728 14.2341 14.766 13.9416 15.013 13.7334C15.2553 13.5292 15.4185 13.437 15.5667 13.3922C15.8493 13.307 16.1507 13.307 16.4333 13.3922C16.5815 13.437 16.7447 13.5292 16.987 13.7334C17.234 13.9416 17.5272 14.2341 17.9473 14.6542L18.9755 15.6825C18.9887 15.2721 18.9948 14.812 18.9976 14.2904Z"
+                        fill="white"
+                      />
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                    </svg>
+                  </div>
+                  <div class="add_image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                        stroke="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9976 14.2904L18.6544 13.9471L18.6385 13.9313C18.238 13.5307 17.9149 13.2077 17.6314 12.9687C17.3394 12.7226 17.055 12.5353 16.7221 12.4349C16.2512 12.2928 15.7488 12.2928 15.2779 12.4349C14.945 12.5353 14.6606 12.7226 14.3686 12.9687C14.0851 13.2077 13.762 13.5307 13.3615 13.9313L13.3456 13.9471C13.0459 14.2469 12.8458 14.4462 12.6832 14.5807C12.5218 14.7142 12.452 14.7359 12.4237 14.7408C12.3029 14.762 12.1785 14.7381 12.0742 14.6735C12.0498 14.6584 11.993 14.6123 11.8928 14.4285C11.7917 14.2432 11.68 13.9838 11.513 13.5942L11.4596 13.4696L11.4475 13.4414L11.4475 13.4414C11.0829 12.5907 10.7931 11.9144 10.5107 11.4126C10.2237 10.9026 9.90522 10.4984 9.44575 10.268C9.03426 10.0618 8.57382 9.97308 8.11515 10.0118C7.603 10.055 7.15716 10.3121 6.70134 10.6789C6.25273 11.04 5.73245 11.5603 5.07799 12.2148L5.07798 12.2148L5.05634 12.2364L5 12.2928V12.9999C5 13.2462 5.00007 13.4816 5.00044 13.7065L5.76344 12.9435C6.44443 12.2626 6.92686 11.7811 7.32835 11.458C7.72756 11.1366 7.98255 11.0265 8.19924 11.0082C8.47444 10.985 8.75071 11.0382 8.9976 11.162C9.192 11.2594 9.38786 11.4564 9.63918 11.903C9.89194 12.3521 10.1611 12.9783 10.5404 13.8635L10.5938 13.9881L10.6034 14.0105L10.6034 14.0105C10.7583 14.3719 10.8884 14.6754 11.0149 14.9073C11.1448 15.1455 11.3038 15.3727 11.5479 15.5238C11.8608 15.7175 12.2341 15.7894 12.5966 15.7258C12.8794 15.6761 13.1114 15.5242 13.3204 15.3513C13.524 15.183 13.7575 14.9495 14.0355 14.6714L14.0527 14.6542C14.4728 14.2341 14.766 13.9416 15.013 13.7334C15.2553 13.5292 15.4185 13.437 15.5667 13.3922C15.8493 13.307 16.1507 13.307 16.4333 13.3922C16.5815 13.437 16.7447 13.5292 16.987 13.7334C17.234 13.9416 17.5272 14.2341 17.9473 14.6542L18.9755 15.6825C18.9887 15.2721 18.9948 14.812 18.9976 14.2904Z"
+                        fill="white"
+                      />
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                    </svg>
+                  </div>
+                  <div class="add_image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                        stroke="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.9976 14.2904L18.6544 13.9471L18.6385 13.9313C18.238 13.5307 17.9149 13.2077 17.6314 12.9687C17.3394 12.7226 17.055 12.5353 16.7221 12.4349C16.2512 12.2928 15.7488 12.2928 15.2779 12.4349C14.945 12.5353 14.6606 12.7226 14.3686 12.9687C14.0851 13.2077 13.762 13.5307 13.3615 13.9313L13.3456 13.9471C13.0459 14.2469 12.8458 14.4462 12.6832 14.5807C12.5218 14.7142 12.452 14.7359 12.4237 14.7408C12.3029 14.762 12.1785 14.7381 12.0742 14.6735C12.0498 14.6584 11.993 14.6123 11.8928 14.4285C11.7917 14.2432 11.68 13.9838 11.513 13.5942L11.4596 13.4696L11.4475 13.4414L11.4475 13.4414C11.0829 12.5907 10.7931 11.9144 10.5107 11.4126C10.2237 10.9026 9.90522 10.4984 9.44575 10.268C9.03426 10.0618 8.57382 9.97308 8.11515 10.0118C7.603 10.055 7.15716 10.3121 6.70134 10.6789C6.25273 11.04 5.73245 11.5603 5.07799 12.2148L5.07798 12.2148L5.05634 12.2364L5 12.2928V12.9999C5 13.2462 5.00007 13.4816 5.00044 13.7065L5.76344 12.9435C6.44443 12.2626 6.92686 11.7811 7.32835 11.458C7.72756 11.1366 7.98255 11.0265 8.19924 11.0082C8.47444 10.985 8.75071 11.0382 8.9976 11.162C9.192 11.2594 9.38786 11.4564 9.63918 11.903C9.89194 12.3521 10.1611 12.9783 10.5404 13.8635L10.5938 13.9881L10.6034 14.0105L10.6034 14.0105C10.7583 14.3719 10.8884 14.6754 11.0149 14.9073C11.1448 15.1455 11.3038 15.3727 11.5479 15.5238C11.8608 15.7175 12.2341 15.7894 12.5966 15.7258C12.8794 15.6761 13.1114 15.5242 13.3204 15.3513C13.524 15.183 13.7575 14.9495 14.0355 14.6714L14.0527 14.6542C14.4728 14.2341 14.766 13.9416 15.013 13.7334C15.2553 13.5292 15.4185 13.437 15.5667 13.3922C15.8493 13.307 16.1507 13.307 16.4333 13.3922C16.5815 13.437 16.7447 13.5292 16.987 13.7334C17.234 13.9416 17.5272 14.2341 17.9473 14.6542L18.9755 15.6825C18.9887 15.2721 18.9948 14.812 18.9976 14.2904Z"
+                        fill="white"
+                      />
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="about_book_action first_last_btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle cx="12" cy="12" r="9" stroke="white" />
+                <path d="M8 12L11 15L16 9" stroke="white" />
+              </svg>
+              <p>Опублікувати переклад</p>
+            </button>
+          </div>
+          <div id="secondTab" class="tabcontent">
+            <div class="second_tab_content">
+              <div class="tabcontent_item main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Вартість за 1 розділ</p>
+                </div>
+                <div class="tabcontent_item_right dfaic">
+                  <input type="text" class="numbers_secondary" value="895" />
+                  <p>UAcoins</p>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Знижка % (при покупці від 10 розділів)</p>
+                </div>
+                <div class="tabcontent_item_right dfaic">
+                  <input type="text" class="numbers_secondary" value="895" />
+                  <p>UAcoins</p>
+                </div>
+              </div>
+              <div class="tabcontent_item main_bb">
+                <div class="tabcontent_item_left">
+                  <p>Абонемент 1</p>
+                </div>
+                <div class="tabcontent_item_right dfaic">
+                  <input
+                    type="text"
+                    class="numbers_secondary numbers_firstly"
+                    value="5"
+                  />
+                  <p>Розділів</p>
+                  <input
+                    type="text"
+                    class="numbers_secondary numbers_firstly"
+                    value="5"
+                  />
+                  <p>UAcoins</p>
+                </div>
+              </div>
+              <div class="tabcontent_item">
+                <div class="tabcontent_item_left">
+                  <p>Абонемент 2</p>
+                </div>
+                <div class="tabcontent_item_right dfaic">
+                  <input
+                    type="text"
+                    class="numbers_secondary numbers_firstly"
+                    value="5"
+                  />
+                  <p>Розділів</p>
+                  <input
+                    type="text"
+                    class="numbers_secondary numbers_firstly"
+                    value="5"
+                  />
+                  <p>UAcoins</p>
+                </div>
+              </div>
+              <button class="about_book_action first_last_btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx="12" cy="12" r="9" stroke="white" />
+                  <path d="M8 12L11 15L16 9" stroke="white" />
+                </svg>
+                <p>Опублікувати переклад</p>
+              </button>
+            </div>
+          </div>
+          <div id="thirdTab" class="tabcontent">
+            <div class="thirdTab_wrapper">
+              <div class="thirdTab_top">
+                <p>
+                  * Увага, після натискання на кнопку "Замовити" вартість <br />
+                  реклами автоматично списується з вашого балансу.
+                </p>
+              </div>
+              <div class="rec_wrapper">
+                <div class="rec_wrapper_item">
+                  <div class="rec_item_left">
+                    <input type="checkbox" />
+                    <div>
+                      <p>Реклама на головній (30 FanCoins/день)</p>
+                      <span
+                        >в каруселі «Реклама» на головній сторінці, максимум 1
+                        книга на день</span
+                      >
+                    </div>
+                  </div>
+                  <div class="rec_item_center">
+                    <div class="rec_item_calendar">
+                      <div>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="about_book_action m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12" r="9" stroke="white" />
+                      <path d="M8 12L11 15L16 9" stroke="white" />
+                    </svg>
+                    <p>Замовити</p>
+                  </button>
+                </div>
+                <div class="rec_wrapper_item">
+                  <div class="rec_item_left">
+                    <input type="checkbox" />
+                    <div>
+                      <p>Реклама у пошуку за жанрами (15 FanCoins/день)</p>
+                      <span
+                        >в каруселі «Реклама» на головній сторінці, максимум 1
+                        книга на день</span
+                      >
+                    </div>
+                  </div>
+                  <div class="rec_item_center">
+                    <div class="rec_item_calendar">
+                      <div>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <h2>Оберіть жанр</h2>
+                      <div class="translator_filter">
+                        <select name="" id="">
+                          <option value="">Жанр</option>
+                          <option value="">Жанр</option>
+                          <option value="">Жанр</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="about_book_action m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12" r="9" stroke="white" />
+                      <path d="M8 12L11 15L16 9" stroke="white" />
+                    </svg>
+                    <p>Замовити</p>
+                  </button>
+                </div>
+                <div class="rec_wrapper_item">
+                  <div class="rec_item_left">
+                    <input type="checkbox" />
+                    <div>
+                      <p>Реклама у пошуку за тегами (15 FanCoins/день)</p>
+                      <span
+                        >в каруселі «Реклама» на головній сторінці, максимум 1
+                        книга на день</span
+                      >
+                    </div>
+                  </div>
+                  <div class="rec_item_center">
+                    <div class="rec_item_calendar">
+                      <div>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <h2>Оберіть жанр</h2>
+                      <div class="translator_filter">
+                        <select name="" id="">
+                          <option value="">Жанр</option>
+                          <option value="">Жанр</option>
+                          <option value="">Жанр</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="about_book_action m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12" r="9" stroke="white" />
+                      <path d="M8 12L11 15L16 9" stroke="white" />
+                    </svg>
+                    <p>Замовити</p>
+                  </button>
+                </div>
+                <div class="rec_wrapper_item">
+                  <div class="rec_item_left">
+                    <input type="checkbox" />
+                    <div>
+                      <p>Реклама у пошуку за фендом (15 FanCoins/день)</p>
+                      <span
+                        >в каруселі «Реклама» на головній сторінці, максимум 1
+                        книга на день</span
+                      >
+                    </div>
+                  </div>
+                  <div class="rec_item_center">
+                    <div class="rec_item_calendar">
+                      <div>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <h2>Оберіть жанр</h2>
+                      <div class="translator_filter">
+                        <select name="" id="">
+                          <option value="">Триллер</option>
+                          <option value="">Триллер</option>
+                          <option value="">Триллер</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="about_book_action m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12" r="9" stroke="white" />
+                      <path d="M8 12L11 15L16 9" stroke="white" />
+                    </svg>
+                    <p>Замовити</p>
+                  </button>
+                </div>
+                <div class="rec_wrapper_item">
+                  <div class="rec_item_left">
+                    <input type="checkbox" />
+                    <div>
+                      <p>Реклама на сторінці Каталог (15 FanCoins/день)</p>
+                      <span
+                        >в каруселі «Реклама» на головній сторінці, максимум 1
+                        книга на день</span
+                      >
+                    </div>
+                  </div>
+                  <div class="rec_item_center">
+                    <div class="rec_item_calendar">
+                      <div>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                        <button class="about_book_action m0 calendar_item">
+                          <p>15.02.2023</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <rect
+                              x="3"
+                              y="6"
+                              width="18"
+                              height="15"
+                              rx="2"
+                              stroke="white"
+                            />
+                            <path
+                              d="M3 10C3 8.11438 3 7.17157 3.58579 6.58579C4.17157 6 5.11438 6 7 6H17C18.8856 6 19.8284 6 20.4142 6.58579C21 7.17157 21 8.11438 21 10H3Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M7 3L7 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M17 3L17 6"
+                              stroke="white"
+                              stroke-linecap="round"
+                            />
+                            <rect
+                              x="7"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="7"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="12"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                            <rect
+                              x="13"
+                              y="16"
+                              width="4"
+                              height="2"
+                              rx="0.5"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <h2>Оберіть жанр</h2>
+                      <div class="translator_filter">
+                        <select name="" id="">
+                          <option value="">Триллер</option>
+                          <option value="">Триллер</option>
+                          <option value="">Триллер</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="about_book_action m0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12" r="9" stroke="white" />
+                      <path d="M8 12L11 15L16 9" stroke="white" />
+                    </svg>
+                    <p>Замовити</p>
+                  </button>
+                </div>
+              </div>
+              <button class="about_book_action">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx="12" cy="12" r="9" stroke="white" />
+                  <path d="M8 12L11 15L16 9" stroke="white" />
+                </svg>
+                <p>Опублікувати переклад</p>
+              </button>
+            </div>
+          </div>
+          <div id="fourthTab" class="tabcontent">
+            <table class="fourthTab_content">
+              <thead>
+                <tr>
+                  <td>Що можуть робити</td>
+                  <td>Усі</td>
+                  <td>Модератори</td>
+                  <td>Ніхто</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="main_bb">
+                  <td>Увійти на сторінку книги</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr class="main_bb">
+                  <td>Коментувати книгу</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr class="main_bb">
+                  <td>Коментувати розділ</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr class="main_bb">
+                  <td>Завантажити</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+                <tr class="main_bb">
+                  <td>Оцінити</td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="about_book_action first_last_btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <circle cx="12" cy="12" r="9" stroke="white" />
+                <path d="M8 12L11 15L16 9" stroke="white" />
+              </svg>
+              <p>Опублікувати переклад</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer_wrapper">
+          <a href="/">
+            <div class="footer_logo">
+              <img src="./assets/main-logo.svg" alt="" />
+            </div>
+          </a>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Для правовласників</p>
+            </a>
+            <a href="#">
+              <p>Угода користувача</p>
+            </a>
+            <a href="#">
+              <p>Справка</p>
+            </a>
+            <a href="#">
+              <p>Не поповнився баланс?</p>
+            </a>
+          </div>
+          <div class="footer_menu">
+            <a href="#">
+              <p>Сказати «дякую!»</p>
+            </a>
+            <a href="#">
+              <p>Запропонувати покращення</p>
+            </a>
+            <a href="#">
+              <p>Контакти</p>
+            </a>
+            <a href="#">
+              <p>Написати у підтримку</p>
+            </a>
+          </div>
+          <div class="footer_socials">
+            <a href="#">
+              <img src="./assets/icons/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/icons/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p>FanVerse © 2023</p>
+          <p>All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

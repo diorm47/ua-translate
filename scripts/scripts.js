@@ -80,12 +80,42 @@ for (let i = 0; i < navItems.length; i++) {
   }
 }
 
-// Tabs
-const { Tablist } = jolty;
-Tablist.initAll();
+// Nav profile toggler
+const nav_profile_menu = document.querySelector(".nav_profile_menu");
+
+function toggleNavMenu() {
+  nav_profile_menu.classList.toggle("nav_profile_menu_hidden");
+}
+
+// tabs
+
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active_tab", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active_tab";
+}
+
+window.onload = function () {
+  var mockEvent = {
+    currentTarget: document.querySelector(".tablinks"),
+  };
+  openTab(mockEvent, "firstTab");
+};
 
 // // Mobile menu wrpper
 // function toggleMenu() {
 //   let element = document.querySelector(".nav_mob_menu");
 //   element.classList.toggle("mob_menu_wrapper");
 // }
+
+// Sliders
+const { Tablist } = jolty;
+Tablist.initAll();
