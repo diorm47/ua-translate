@@ -25,6 +25,15 @@ $(document).ready(function () {
     focusOnSelect: true,
     prevArrow: $(".news_left_arrow"),
     nextArrow: $(".news_right_arrow"),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 
@@ -40,6 +49,15 @@ $(document).ready(function () {
     focusOnSelect: true,
     prevArrow: $(".trends_left_arrow"),
     nextArrow: $(".trends_right_arrow"),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 
@@ -55,6 +73,15 @@ $(document).ready(function () {
     focusOnSelect: true,
     prevArrow: $(".rec_left_arrow"),
     nextArrow: $(".rec_right_arrow"),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 // other books carousel
@@ -69,6 +96,15 @@ $(document).ready(function () {
     focusOnSelect: true,
     prevArrow: $(".other_left_arrow"),
     nextArrow: $(".other_right_arrow"),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 
@@ -83,7 +119,6 @@ function handleLogout() {
   nav_wrapper.classList.add("not_logined");
   localStorage.setItem("logined", false);
 }
-
 if (localStorage.getItem("logined") == "false") {
   nav_wrapper.classList.add("not_logined");
   nav_wrapper.classList.remove("logined_nav");
@@ -130,6 +165,13 @@ for (let i = 0; i < navItems.length; i++) {
 const nav_profile_menu = document.querySelector(".nav_profile_menu");
 function toggleNavMenu() {
   nav_profile_menu.classList.toggle("nav_profile_menu_hidden");
+  console.log('ihul');
+}
+
+// Mobile menu wrpper
+function toggleMenu() {
+  let element = document.querySelector(".nav_mob_menu");
+  element.classList.toggle("mob_menu_wrapper");
 }
 
 // tabs
@@ -153,13 +195,8 @@ window.onload = function () {
   openTab(mockEvent, "firstTab");
 };
 
-// // Mobile menu wrpper
-// function toggleMenu() {
-//   let element = document.querySelector(".nav_mob_menu");
-//   element.classList.toggle("mob_menu_wrapper");
-// }
+
 
 // Sliders
-
 const { Tablist } = jolty;
 Tablist.initAll();

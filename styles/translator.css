@@ -116,3 +116,25 @@
   background: #282d3b;
   border: none;
 }
+
+@media only screen and (max-width: 700px) {
+  .translator_table thead tr td,
+  .translator_table tbody tr td {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .translator_table thead tr td:first-child {
+    text-align: left;
+  }
+  .translator_table thead tr td:last-child {
+    text-align: right;
+  }
+
+  .translator_table tbody tr td:first-child {
+    text-align: left;
+  }
+  .translator_table tbody tr td:last-child {
+    text-align: right;
+  }
+}

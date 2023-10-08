@@ -318,3 +318,28 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .create_tr_top_nav,
+  .tabcontent_item,
+  .tabcontent_item,
+  .rec_wrapper_item {
+    flex-direction: column;
+    align-items: start;
+  }
+  .tabcontent_item,
+  .rec_wrapper_item {
+    gap: 10px;
+  }
+  .tabcontent_item_left,
+  .tabcontent_item_right,
+  .second_tab_content .tabcontent_item_left,
+  .rec_item_left,
+  .rec_item_center select,
+  .rec_item_center {
+    width: 100%;
+  }
+  .first_last_btn {
+    margin-top: 30px;
+  }
+}

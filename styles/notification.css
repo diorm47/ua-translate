@@ -48,3 +48,17 @@
   transition: all 0.3s ease;
   color: #b44545;
 }
+
+
+@media only screen and (max-width: 700px) {
+   .notification_page .catalogue_right {
+    margin-top: 0;
+   }
+   .notification_page
+   .catalogue_left {
+  margin-top: 30px;
+   }
+   .main_content_wrapper {
+    margin-bottom: 40px;
+   }
+}

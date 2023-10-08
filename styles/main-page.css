@@ -442,10 +442,132 @@
   .news_block,
   .recomendations_block_wrapper,
   .trends_block,
-  .recomendations_block, .footer_wrapper {
+  .recomendations_block,
+  .footer_wrapper {
     width: 100%;
   }
-  .news_block_title p, .recomendations_block_title p, .recomendations_block_menu {
+  .news_block_title p,
+  .recomendations_block_title p,
+  .recomendations_block_menu {
     padding-left: 15px;
   }
+}
+
+@media only screen and (max-width: 700px) {
+  .adverts_block {
+    margin-top: 30px;
+  }
+  .adverts_block_title p {
+    margin: 0;
+  }
+  .adverts_carousel_item_wrapper {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .adverts_carousel_item_wrapper {
+    margin-top: 20px;
+  }
+  .adverts_carousel_item_img img {
+    width: 250px;
+  }
+  .adverts_carousel_item_rate {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .adverts_carousel_item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .adverts_carousel_item_content {
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  .adverts_carousel_item_name p {
+    font-size: 30px;
+  }
+  .adverts_carousel_item_description p {
+    font-size: 12px;
+    min-height: 80px;
+  }
+  .adverts_carousel {
+    display: block !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .adverts_carousel .slick-dots {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .adverts_carousel .slick-dots li {
+    margin: 0 7.5px;
+  }
+  .custom_car_arrows {
+    position: absolute;
+    bottom: -7px;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    left: 35%;
+  }
+  .updates_block_wrapper,
+  .updates_block_card_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .updates_block_card_wrapper div {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .updates_block_card_line,
+  .recomendations_block_menu,
+  .recomendation_block_items {
+    width: 100%;
+  }
+  .recomendations_block_menu {
+    margin-bottom: 10px;
+  }
+  .trends_block,
+  .recomendations_block {
+    margin-top: 30px;
+  }
+  .recomendations_block_wrapper {
+    margin-top: 0;
+  }
+  .recomendations_block_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .attention_block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .updates_block_title,
+  .recomendations_block_title,
+  .news_block_title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .updates_block_title p,
+  .recomendations_block_title p,
+  .news_block_title p {
+    font-size: 20px;
+  }
+  .news_arrows {
+    left: 34%;
+  }
+  .adverts_left_arrow img {
+    transform: rotate(-90deg);
+  }
+  .adverts_right_arrow img {
+    transform: rotate(-90deg);
+  }
+  .adverts_block .custom_car_arrows {
+    gap: 93px;
+  }
+
 }

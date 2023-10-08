@@ -185,4 +185,13 @@
   margin-bottom: 30px;
 }
 
-
+@media only screen and (max-width: 700px) {
+  .cat_cards,
+  .catalogue_left,
+  .catalogue_right {
+    width: 100%;
+  }
+  .catalogue_right {
+    margin-top: 90px;
+  }
+}

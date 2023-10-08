@@ -382,6 +382,53 @@
   line-height: normal;
 }
 
-.page_navigation {
-    
+@media only screen and (max-width: 700px) {
+  .about_book_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .about_book_desc {
+    width: 100%;
+  }
+  .other_books .slick-dots {
+    margin-top: 20px;
+  }
+
+  .other_books {
+    margin-top: 20px 0;
+  }
+  .other_parts_actions {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .other_parts_actions div:last-child {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .other_parts_table_row_content {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .other_parts_titles {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .other_parts_titles p {
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .parts_table_cost,
+  .parts_table_title,
+  .parts_table_date,
+  .parts_table_action {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .comment_block_item {
+    gap: 15px;
+  }
 }

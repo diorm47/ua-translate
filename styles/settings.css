@@ -95,6 +95,17 @@
 }
 
 .font_color button p {
-    margin: 0 !important;
-    margin-right: 30px !important; 
+  margin: 0 !important;
+  margin-right: 30px !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .settings_content_block {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .settings_content_left,
+  .settings_content_right {
+    width: 100%;
+  }
 }

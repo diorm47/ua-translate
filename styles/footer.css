@@ -51,3 +51,37 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
+
+@media only screen and (max-width: 700px) {
+  .footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer_logo,
+  .footer_wrapper a:nth-child(1) {
+    width: 100%;
+  }
+  .footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer_socials a {
+    width: auto !important;
+  }
+  .footer_wrapper {
+    padding: 20px 0;
+  }
+  .footer_menu {
+    width: 48%;
+  }
+}

@@ -33,7 +33,17 @@ button {
   max-width: 1920px;
   margin: 0 auto;
 }
-
+a,
+p,
+div,
+h1,
+h2,
+h3,
+button,
+svg,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
 .nav_menu_item p {
   color: #fff;
   text-align: center;
@@ -215,10 +225,25 @@ select {
 @media only screen and (max-width: 1150px) {
   .main_content_wrapper,
   .footer_wrapper,
-  .attention_block {
+  .attention_block,
+  .about_page_wrapper {
     width: 100%;
   }
   .cat_cards {
     grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .page_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .custom_car_arrows {
+    display: none;
+  }
+  .not_found_content h1 {
+    font-size: 100px;
   }
 }
