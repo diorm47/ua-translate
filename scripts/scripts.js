@@ -77,7 +77,7 @@ const nav_wrapper = document.querySelector(".nav_wrapper");
 function handleLoginBtn() {
   nav_wrapper.classList.remove("not_logined");
   localStorage.setItem("logined", true);
-  window.location.reload()
+  window.location.reload();
 }
 function handleLogout() {
   nav_wrapper.classList.add("not_logined");
@@ -111,7 +111,6 @@ function handleAuth() {
   login_auth_wrapper.style.display = "flex";
   auth_modal.style.display = "flex";
   login_modal.style.display = "none";
-
 }
 function handleAuthExit() {
   login_auth_wrapper.style.display = "none";

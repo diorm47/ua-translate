@@ -201,3 +201,24 @@ input[type="checkbox"]:checked {
 select {
   background: #1a1e29 !important;
 }
+
+/* Responsiv */
+
+@media only screen and (max-width: 1600px) {
+  .page_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .main_content_wrapper,
+  .footer_wrapper,
+  .attention_block {
+    width: 100%;
+  }
+  .cat_cards {
+    grid-gap: 20px;
+  }
+}

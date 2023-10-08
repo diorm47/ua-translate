@@ -436,3 +436,16 @@
   text-decoration-line: underline;
 }
 
+@media only screen and (max-width: 1230px) {
+  .adverts_block,
+  .navigation_bar,
+  .news_block,
+  .recomendations_block_wrapper,
+  .trends_block,
+  .recomendations_block, .footer_wrapper {
+    width: 100%;
+  }
+  .news_block_title p, .recomendations_block_title p, .recomendations_block_menu {
+    padding-left: 15px;
+  }
+}

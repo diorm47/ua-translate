@@ -209,3 +209,11 @@
 .switch_toggler {
   right: 33%;
 }
+
+/* res */
+
+@media only screen and (max-width: 1600px) {
+  .nav_wrapper {
+    width: 100%;
+  }
+}
