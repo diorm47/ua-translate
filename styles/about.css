@@ -108,6 +108,7 @@
   gap: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 .about_book_cost:hover {
   transition: all 0.3s ease;
