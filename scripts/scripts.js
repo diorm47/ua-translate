@@ -163,9 +163,12 @@ for (let i = 0; i < navItems.length; i++) {
 
 // Nav profile toggler
 const nav_profile_menu = document.querySelector(".nav_profile_menu");
+const mobile_profile = document.querySelector(".mobile_login .nav_profile_menu");
+
+
 function toggleNavMenu() {
   nav_profile_menu.classList.toggle("nav_profile_menu_hidden");
-  console.log('ihul');
+  mobile_profile.classList.toggle("nav_profile_menu_hidden");
 }
 
 // Mobile menu wrpper

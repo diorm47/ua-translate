@@ -81,6 +81,7 @@
   position: absolute;
   top: 120%;
   left: -35px;
+  z-index: 116;
 }
 .nav_profile_menu_hidden {
   display: none;
@@ -228,9 +229,9 @@
 }
 .nav_mob_menu .search_wrapper {
   display: flex;
-
-  margin: 60px 0;
-  margin-top: 100px;
+  width: 270px;
+  margin-top: 18px;
+  margin-bottom: 30px;
 }
 .mob_menu_wrapper {
   transform: translate(0);
@@ -284,10 +285,20 @@
     cursor: pointer;
   }
   .nav_menu_item p {
-    font-size: 20px !important;
-    margin-bottom: 15px;
+    font-size: 18px !important;
+    margin-bottom: 10px;
   }
   .mobile_login {
     margin-top: 20px;
   }
+
+  .nav_profile_menu {
+    top: 105%;
+   padding-top: 10px;
+   padding-bottom: 0;
+  }
+  .nav_profile_menu_item {
+   margin: 13px 0;
+  }
+
 }
