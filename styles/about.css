@@ -106,6 +106,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about_book_cost:hover {
+  transition: all 0.3s ease;
+  background: #313746;
 }
 
 .about_book_cost span {
