@@ -95,3 +95,29 @@
   line-height: 17px;
   color: #fff;
 }
+.auth_socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.auth_socials button {
+  border: 0.0625rem solid #5e626c;
+}
+.auth_socials button:hover svg * {
+  stroke: none;
+}
+
+.login_auth_wrapper {
+  display: none;
+}
+.auth_modal,
+.login_modal {
+  display: none;
+}
+.logined_nav .nav_login_actions {
+  display: none;
+}
+
+.not_logined .nav_login_actions {
+  display: flex;
+}

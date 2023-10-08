@@ -72,6 +72,53 @@ $(document).ready(function () {
   });
 });
 
+// Logout
+const nav_wrapper = document.querySelector(".nav_wrapper");
+function handleLoginBtn() {
+  nav_wrapper.classList.remove("not_logined");
+  localStorage.setItem("logined", true);
+  window.location.reload()
+}
+function handleLogout() {
+  nav_wrapper.classList.add("not_logined");
+  localStorage.setItem("logined", false);
+}
+
+if (localStorage.getItem("logined") == "false") {
+  nav_wrapper.classList.add("not_logined");
+  nav_wrapper.classList.remove("logined_nav");
+}
+if (localStorage.getItem("logined") != "false") {
+  nav_wrapper.classList.add("logined_nav");
+  nav_wrapper.classList.remove("not_logined");
+}
+
+// Login
+const login_auth_wrapper = document.querySelector(".login_auth_wrapper");
+const login_modal = document.querySelector(".login_modal");
+const auth_modal = document.querySelector(".auth_modal");
+function handleLogin() {
+  login_auth_wrapper.style.display = "flex";
+  login_modal.style.display = "flex";
+  auth_modal.style.display = "none";
+}
+function handleLoginExit() {
+  login_auth_wrapper.style.display = "none";
+  login_modal.style.display = "none";
+  auth_modal.style.display = "none";
+}
+function handleAuth() {
+  login_auth_wrapper.style.display = "flex";
+  auth_modal.style.display = "flex";
+  login_modal.style.display = "none";
+
+}
+function handleAuthExit() {
+  login_auth_wrapper.style.display = "none";
+  auth_modal.style.display = "none";
+  login_modal.style.display = "none";
+}
+
 // Navigation active
 let navItems = document.querySelectorAll(".navigation_bar a");
 for (let i = 0; i < navItems.length; i++) {
@@ -107,17 +154,6 @@ window.onload = function () {
   openTab(mockEvent, "firstTab");
 };
 
-// Logout
-const nav_wrapper = document.querySelector(".nav_wrapper");
-function handleLogout() {
-  nav_wrapper.classList.add("not_logined");
-  localStorage.setItem("logined", false);
-}
-
-if (localStorage.getItem("logined") == "false") {
-  nav_wrapper.classList.add("not_logined");
-}
-
 // // Mobile menu wrpper
 // function toggleMenu() {
 //   let element = document.querySelector(".nav_mob_menu");
@@ -125,5 +161,6 @@ if (localStorage.getItem("logined") == "false") {
 // }
 
 // Sliders
+
 const { Tablist } = jolty;
 Tablist.initAll();
